@@ -32,4 +32,10 @@ public class Funcionario {
     public void setSalario(double salario){
         this.salario = salario;
     }
+
+    public String toString(){
+        return "primeiro nome: " + this.primeiro_nome + "\n" +
+               "Segundo nome: " + this.segundo_nome + "\n" +
+               "Salario: " + this.salario;
+    }
 }
