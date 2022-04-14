@@ -24,6 +24,13 @@ public final class FuncionarioComissionado extends Funcionario {
     public double salarioTotal(){
         return getSalario() + getComissao();
     }
+
+    public String toString(){
+        return "primeiro nome: " + this.getPrmeiro_nome() + "\n" +
+               "Segundo nome: " + this.getSegundo_nome() + "\n" +
+               "Salario + comissao: " + this.salarioTotal() + "\n" +
+               "Quantidade de itens vendidos: " + this.getQtdVendas();
+    }
     
 
 

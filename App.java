@@ -29,7 +29,11 @@ public class App{
 
                         funcionario.add(new FuncionarioComissionado(primeiroNome, segundoNome, salario));
 
-                        funcionario.get(funcionario.size()-1);
+                        FuncionarioComissionado funcionario_comissionado;
+                        funcionario_comissionado = (FuncionarioComissionado) funcionario.get(funcionario.size()-1);
+
+                        funcionario_comissionado.adicionarComissao(valorVenda, qtdVendas);
+                    
                     }
                     else if(opcao == 2){
                         funcionario.add(new Funcionario(primeiroNome, segundoNome, salario));
@@ -53,7 +57,10 @@ public class App{
     }
 
     public static void menu(){
-         System.out.println("1 - inserir funcionario\n"+ 
-                            "2 - mostrar dados do funcionario\n");
+         System.out.println("______________________________________\n" +
+                            "|                                    |\n"+
+                            "| 1 - inserir funcionario            |\n"+ 
+                            "| 2 - mostrar dados do funcionario   |\n" +
+                            "|____________________________________|\n");
     }
 }
